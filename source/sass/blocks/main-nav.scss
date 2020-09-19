@@ -1,4 +1,20 @@
 .main-nav {
   margin-bottom: 255px;
   width: 100%;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (max-width: $tablet-width) {
+    display: block;
+    margin-bottom: 0;
+    width: 100%;
+  }
+}
+
+.page-header--closed-menu .main-nav {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }

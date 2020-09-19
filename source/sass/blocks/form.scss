@@ -1,5 +1,15 @@
 .form {
   padding: 4px 0 20px;
+
+  @media (max-width: $tablet-width) {
+    padding: 70px 28% 40px;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
 
 .form__text {
@@ -7,20 +17,54 @@
   text-align: center;
   font-size: 17px;
   line-height: 28px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: $black;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .form__item {
   width: 100%;
   margin-top: 20px;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 auto 20px;
+    width: 95%;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
 }
 
 .form__input {
-  padding: 14px 10px 10px 30px;
+  padding: 14px 10px 8px 30px;
   font-size: 15px;
   line-height: 24px;
   color: $dark;
   border-radius: 4px;
   border: solid 1px #c9ccd4;
+
+  &:hover,
+  &:active,
+  &:focus {
+    box-shadow: 0 0 0 2px $blue;
+    outline: none;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-left: 21px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 26px;
+  }
 }
 
 .form__input::placeholder {
@@ -39,4 +83,16 @@
   background-color: $blue;
   border-width: 0;
   border-radius: 6px;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    background-color: $lightblue;
+  }
+
+  &:focus {
+    background-color: $lightblue;
+    box-shadow: 0 0 0 3px #038d7e;
+    outline: none;
+  }
 }
