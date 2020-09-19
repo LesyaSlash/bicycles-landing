@@ -1,0 +1,31 @@
+.page-header {
+  width: 100%;
+  color: $white;
+  background-color: $dark-bg;
+  background-image: url("../img/intro.jpg");
+  background-size: 1440px 825px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../img/intro@2x.jpg");
+  }
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 220px;
+  width: 880px;
+  margin: 0 auto;
+}
+
+.page-header__intro {
+  width: 395px;
+}
+
+.page-header__form {
+  width: 327px;
+}
