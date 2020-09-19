@@ -1,0 +1,14 @@
+@mixin title-desktop {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+@mixin title-tablet {
+  font-size: 24px;
+  line-height: 41px;
+}
+
+@mixin title-tablet-modified {
+  font-size: 24px;
+  line-height: 30px;
+}

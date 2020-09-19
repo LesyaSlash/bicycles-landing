@@ -9,8 +9,17 @@
   <link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-600.woff2" as="font">
 </head>
 <body>
-  <header class="page-header">
+  <header class="page-header page-header--no-js">
     <div class="page-header__wrapper">
+      <button class="page-header__toggle toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+          <svg class="toggle__icon toggle__icon--burger" width="30" height="30">
+            <use xlink:href="img/sprite.svg#icon-burger"></use>
+          </svg>
+          <svg class="toggle__icon toggle__icon--cross" width="50" height="50">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+      </button>
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -30,20 +39,20 @@
       <section class="page-header__intro intro">
         <a class="page-header__link">
           <img class="page-header__logo" src="img/Logo.svg" alt="Логотип магазина" width="68" height="21">
-          <h2 class="intro__item intro__item--title">Мы продаем
-          велосипеды</h2>
-          <p class="intro__item intro__item--text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
         </a>
+        <h2 class="intro__item intro__item--title">Мы продаем
+          велосипеды</h2>
+        <p class="intro__item intro__item--text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
       </section>
       <section class="page-header__form">
         <h2 class="visually-hidden">Поможем выбрать велосипед</h2>
         <form class="form" action="https://echo.htmlacademy.ru" method="GET">
           <p class="form__text">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
           <label> <span class="visually-hidden">Имя</span>
-            <input class="form__item form__input" type="text" placeholder="Введите Ваше Имя" required="">
+            <input class="form__item form__input" type="text" placeholder="Введите Ваше Имя" name="name" required="">
           </label>
           <label> <span class="visually-hidden">Номер телефона</span>
-            <input class="form__item form__input" type="tel" placeholder="Введите Ваш номер телефона" required="">
+            <input class="form__item form__input" type="tel" placeholder="Введите Ваш номер телефона" name="phone" pattern="[\d+\-()\s]+$" title="Допускается ввод цифр, пробелов и символов &quot;+&quot;, &quot;-&quot;, &quot;()&quot;" required="">
           </label>
           <button class="form__item form__button" type="submit">Подобрать велосипед мечты</button>
         </form>
@@ -53,6 +62,6 @@
   <main class="page-main">
     <h1 class="visually-hidden">Магазин велосипедов Moon</h1>
   </main>
-
+  <script src="js/script.js"></script>
 </body>
 </html>

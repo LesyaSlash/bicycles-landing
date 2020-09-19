@@ -11,6 +11,11 @@
     (min-resolution: $retina-dppx) {
     background-image: url("../img/intro@2x.jpg");
   }
+
+  @media (max-width: $tablet-width) {
+    position: relative;
+    background: none;
+  }
 }
 
 .page-header__wrapper {
@@ -20,12 +25,65 @@
   padding-bottom: 220px;
   width: 880px;
   margin: 0 auto;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    display: block;
+  }
 }
 
 .page-header__intro {
   width: 395px;
+
+  @media (max-width: $tablet-width) {
+    padding: 134px 18.5% 80px;
+    width: 100%;
+    text-align: center;
+    background-color: $dark-bg;
+    background-image: url("../img/intro-tablet.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/intro-tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 120px 5% 70px;
+    background-image: url("../img/intro-mob.jpg");
+    background-position: 50%;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/intro-mob@2x.jpg");
+    }
+  }
 }
 
 .page-header__form {
   width: 327px;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.page-header__logo {
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    top: 25px;
+    left: 3%;
+  }
+
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    top: 25px;
+    left: 3%;
+  }
+
+  @media (max-width: $mobile-width) {
+    left: 5%;
+  }
 }

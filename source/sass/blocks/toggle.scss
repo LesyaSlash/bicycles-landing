@@ -1,0 +1,45 @@
+.toggle {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border: none;
+}
+
+.page-header--no-js .toggle {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header--closed-menu .toggle {
+  @media (max-width: $tablet-width) {
+    display: block;
+    background-color: $blue;
+  }
+}
+
+.page-header--opened-menu .toggle {
+  @media (max-width: $tablet-width) {
+    display: block;
+    z-index: 5;
+    background-color: transparent;
+  }
+}
+
+.page-header--closed-menu .toggle__icon--burger,
+.page-header--opened-menu .toggle__icon--cross {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.page-header--opened-menu .toggle__icon--burger,
+.page-header--closed-menu .toggle__icon--cross {
+  display: none;
+}
