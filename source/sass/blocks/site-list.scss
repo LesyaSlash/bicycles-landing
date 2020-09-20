@@ -52,10 +52,23 @@
 
 .page-header--opened-menu .site-list__item {
   @media (max-width: $tablet-width) {
-    padding: 16px 5%;
+    position: relative;
+    padding: 17px 5% 15px;
     margin-bottom: 30px;
     color: $grey;
     opacity: 1;
     background-color: $light-grey;
+  }
+
+  &::after {
+    @media (max-width: $tablet-width) {
+      position: absolute;
+      top: 17px;
+      right: 5%;
+      width: 25px;
+      height: 25px;
+      background-image: url("../img/arrow-right.svg");
+      content: "";
+    }
   }
 }
