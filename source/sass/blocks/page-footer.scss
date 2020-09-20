@@ -1,0 +1,14 @@
+.page-footer {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 70px;
+  text-align: center;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 30px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 20px;
+  }
+}

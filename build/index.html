@@ -62,6 +62,35 @@
   <main class="page-main">
     <h1 class="visually-hidden">Магазин велосипедов Moon</h1>
   </main>
+  <footer class="page-footer">
+    <section class="page-footer__map map">
+      <h2 class="map__title">Как нас найти?</h2>
+      <p class="map__text">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+      <picture>
+        <source type="image/webp" media="(max-width: 767px)" srcset="img/map-mob.webp 1x, img/map-mob@2x.webp 2x">
+        <source type="image/webp" media="(max-width: 1023px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/map.webp 1x, img/map@2x.webp 2x">
+
+        <source media="(max-width: 767px)" srcset="img/map-mob.png 1x, img/map-mob@2x.png 2x">
+        <source media="(max-width: 1023px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
+        <img class="map__image" src="img/map.png" srcset="img/map@2x.png 2x" alt="Мы на карте">
+      </picture>
+    </section>
+    <div class="page-footer__contacts contacts">
+      <div class="contacts__item contacts__item--mail">
+        <svg class="contacts__icon contacts__icon--mail" width="26" height="20">
+          <use xlink:href="img/sprite.svg#icon-mail"></use>
+        </svg>
+        <a class="contacts__link contacts__link--mail" href="mailto:puteshestviemechta@gmail.ru" target="_blank" rel="noopener noreferrer">puteshestviemechta@gmail.ru</a>
+      </div>
+      <div class="contacts__item contacts__item--phone">
+        <svg class="contacts__icon contacts__icon--phone" width="22" height="24">
+          <use xlink:href="img/sprite.svg#icon-phone"></use>
+        </svg>
+        <a class="contacts__link contacts__link--phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
+      </div>
+    </div>
+  </footer>
   <script src="js/script.js"></script>
 </body>
 </html>
