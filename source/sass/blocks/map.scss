@@ -14,7 +14,7 @@
   }
 }
 
-.map__title {
+.map h2 {
   @include title-desktop;
   margin: 0;
   margin-bottom: 30px;
@@ -30,7 +30,7 @@
   }
 }
 
-.map__text {
+.map p {
   margin: 0 210px 39px 193px;
   font-weight: 400;
   font-size: 17px;

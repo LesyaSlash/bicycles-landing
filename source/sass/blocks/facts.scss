@@ -12,7 +12,7 @@
   }
 }
 
-.facts__title {
+.facts h2 {
   @include title-desktop;
   margin: 0;
   margin-bottom: 50px;
@@ -59,7 +59,7 @@
   }
 }
 
-.facts__number {
+.facts__item span {
   display: inline-block;
   vertical-align: middle;
   margin-bottom: 15px;
@@ -79,7 +79,7 @@
   }
 }
 
-.facts__text {
+.facts__item p {
   font-weight: 400;
   margin: 0;
   font-size: 22px;
