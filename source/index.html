@@ -23,7 +23,7 @@
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="#about">О нас</a>
+            <a class="site-list__link" href="#facts">О нас</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="#types">Виды велосипедов</a>
@@ -39,7 +39,7 @@
       <h1 class="visually-hidden">Магазин велосипедов Moon</h1>
       <section class="page-header__intro intro">
         <a class="page-header__link">
-          <img class="page-header__logo" src="img/Logo.svg" alt="Логотип магазина" width="68" height="21">
+          <img class="page-header__logo" src="img/logo.svg" alt="Логотип магазина" width="68" height="21">
         </a>
         <h2 class="intro__item intro__item--title">Мы продаем
           велосипеды</h2>
@@ -61,7 +61,7 @@
     </div>
   </header>
   <main class="page-main">
-    <section class="facts">
+    <section class="facts" id="facts">
       <h2 class="facts__title">Несколько фактов о нас</h2>
       <ul class="facts__list">
         <li class="facts__item">
@@ -81,11 +81,104 @@
           <p class="facts__text">Профессиональные консультации!</p>
         </li>
       </ul>
+    </section>
+    <section class="types" id="types">
+      <h2 class="types__title">Виды велосипедов</h2>
+      <ul class="types__list">
+        <li class="types__item">
+          <a class="types__link">
+            <picture>
+              <!-- 1х: 270px; 2x: 540px -->
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="img/road-bike-tablet.webp 1x, img/road-bike-tablet@2x.webp 2x">
+              <!-- 1х: 342x; 2x: 684px -->
+              <source type="image/webp" srcset="img/road-bike.webp 1x, img/road-bike@2x.webp 2x">
 
+              <!-- 1х: 270px; 2x: 540px -->
+              <source media="(max-width: 1023px)" srcset="img/road-bike-tablet.jpg 1x, img/road-bike-tablet@2x.jpg 2x">
+              <!-- 1х: 342px; 2x: 684px -->
+              <img src="img/road-bike.jpg" srcset="img/road-bike@2x.jpg 2x" width="342" height="503"
+                alt="Фото дорожного велосипеда">
+            </picture>
+            <h3>Дорожный велосипед</h3>
+          </a>
+        </li>
+        <li class="types__item">
+          <a class="types__link">
+            <picture>
+              <!-- 1х: 270px; 2x: 540px -->
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="img/mountain-bike-tablet.webp 1x, img/mountain-bike-tablet@2x.webp 2x">
+              <!-- 1х: 342px; 2x: 648px -->
+              <source type="image/webp"
+                srcset="img/mountain-bike.webp 1x, img/mountain-bike@2x.webp 2x">
+
+              <!-- 1х: 270px; 2x: 540px -->
+              <source media="(max-width: 1023px)"
+                srcset="img/mountain-bike-tablet.jpg 1x, img/mountain-bike-tablet@2x.jpg 2x">
+              <!-- 1х: 342px; 2x: 684px -->
+              <img src="img/mountain-bike.jpg" srcset="img/mountain-bike@2x.jpg 2x" width="342" height="566"
+                alt="Фото горного велосипеда">
+            </picture>
+            <h3>Горный велосипед</h3>
+          </a>
+        </li>
+        <li class="types__item">
+          <a class="types__link">
+            <picture>
+              <!-- 1х: 270px; 2x: 540px -->
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="img/children-bike-tablet.webp 1x, img/children-bike-tablet@2x.webp 2x">
+              <!-- 1х: 342px; 2x: 684px -->
+              <source type="image/webp"
+                srcset="img/children-bike.webp 1x, img/children-bike@2x.webp 2x">
+
+              <!-- 1х: 270px; 2x: 540px -->
+              <source media="(max-width: 1023px)"
+                srcset="img/children-bike-tablet.jpg 1x, img/children-bike-tablet@2x.jpg 2x">
+              <!-- 1х: 342px; 2x: 684px -->
+              <img src="img/children-bike.jpg" srcset="img/children-bike@2x.jpg 2x"
+                width="342" height="513"
+                alt="Фото детского велосипеда">
+            </picture>
+            <h3>Детский велосипед</h3>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="video" id="video">
+      <div class="video__wrapper">
+        <h2>Видео про велосипеды</h2>
+        <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+        <div class="video__media">
+          <button class="video__button" type="button" aria-label="Начать просмотр видео">
+            <svg class="video__icon" width="65" height="65">
+              <use xlink:href="img/sprite.svg#play"></use>
+            </svg>
+          </button>
+          <picture>
+            <!-- 1х: 288px; 2x: 576px -->
+            <source type="image/webp" media="(max-width: 767px)"
+            srcset="img/video-mob.webp 1x, img/video-mob@2x.webp 2x">
+            <!-- 1х: 503px; 2x: 1006px -->
+            <source type="image/webp" media="(max-width: 1023px)"
+            srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
+            <!-- 1х: 929px; 2x: 1858px -->
+            <source type="image/webp" srcset="img/video.webp 1x, img/video@2x.webp 2x">
+
+            <!-- 1х: 288px; 2x: 576px -->
+            <source media="(max-width: 767px)" srcset="img/video-mob.jpg 1x, img/video-mob@2x.jpg 2x">
+            <!-- 1х: 503px; 2x: 1006px -->
+            <source media="(max-width: 1023px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <!-- 1х: 929px; 2x: 1858px -->
+            <img src="img/video.jpg" srcset="img/video@2x.jpg 2x" width="929" height="522" alt="Видео о велосипедах">
+          </picture>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
-    <section class="page-footer__map map">
+    <section class="page-footer__map map" id="contacts">
       <h2 class="map__title">Как нас найти?</h2>
       <p class="map__text">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
       <picture>
