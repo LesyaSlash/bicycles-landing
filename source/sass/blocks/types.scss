@@ -1,5 +1,6 @@
 .types {
-  padding: 150px 118px 114px 144px;
+  width: 100%;
+  padding: 150px 7.9% 114px 10%;
   background-color: $grey-bg;
 
   @media (max-width: $tablet-width) {
@@ -7,7 +8,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding: 50px 0 10px;
+    padding: 50px 0 16px;
   }
 }
 
@@ -28,6 +29,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  width: 100%;
   max-width: 1222px;
   margin: 0 auto;
 
@@ -39,7 +41,8 @@
 
 .types__list li {
   position: relative;
-  margin: 0 25px 15px;
+  margin: 0 2.12% 15px;
+  margin-right: auto;
   border-radius: 3%;
 
   @media (max-width: $tablet-width) {
@@ -48,7 +51,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin: 0 25px 41px;
+    margin: 0 25px 20px;
   }
 
   &:hover {
@@ -163,6 +166,8 @@
   position: relative;
   z-index: 2;
   border-radius: 3%;
+  border-color: transparent;
+  border-width: 0;
 }
 
 .types__list h3 {

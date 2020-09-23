@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 
 *,
@@ -9,14 +10,21 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   min-width: 320px;
+  height: 100%;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 32px;
   color: $dark;
   background-color: $white;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 ul {

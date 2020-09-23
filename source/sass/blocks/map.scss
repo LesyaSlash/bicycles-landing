@@ -10,7 +10,7 @@
   @media (max-width: $mobile-width) {
     min-width: 320px;
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 26px;
   }
 }
 
@@ -25,6 +25,7 @@
   }
 
   @media (max-width: $mobile-width) {
+    margin-right: 0;
     font-size: 18px;
   }
 }

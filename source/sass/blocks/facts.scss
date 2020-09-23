@@ -7,8 +7,8 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding-right: 5%;
-    padding-left: 5%;
+    padding-right: 4.8%;
+    padding-left: 4.8%;
   }
 }
 
@@ -40,10 +40,10 @@
 .facts__item {
   width: 263px;
   margin-bottom: 43px;
-  margin-right: 3.1%;
+  margin-right: auto;
 
   @media (max-width: $tablet-width) {
-    margin-right: 5.2%;
+    margin-right: auto;
   }
 
   @media (max-width: $mobile-width) {
