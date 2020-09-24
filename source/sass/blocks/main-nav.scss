@@ -22,7 +22,6 @@
 .main-nav__list {
   @include list-style (0, 21px 25px 9px 22px, none);
   display: flex;
-  //padding: 21px 25px 9px 22px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
   @media (max-width: $tablet-width) {
@@ -58,6 +57,10 @@
     font-size: 20px;
     line-height: 28px;
   }
+}
+
+.main-nav__item a {
+  color: inherit;
 }
 
 .page-header--opened-menu .main-nav__list {
