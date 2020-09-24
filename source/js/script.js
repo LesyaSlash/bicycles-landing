@@ -1,15 +1,16 @@
 'use strict';
 
 (function () {
-
+  var body = document.querySelector('body');
   var pageHeader = document.querySelector('.page-header');
   var headerToggle = document.querySelector('.page-header__toggle');
-  var menuItems = pageHeader.querySelectorAll('.site-list__item');
+  var menuItems = pageHeader.querySelectorAll('.main-nav__item');
 
   // функция закрытия меню
   var closeMenu = function () {
     pageHeader.classList.remove('page-header--opened-menu');
     pageHeader.classList.add('page-header--closed-menu');
+    body.classList.remove('modal__scroll-hidden');
   };
 
   // открытие/закрытие меню по нажатию на кнопку
@@ -22,6 +23,7 @@
       if (pageHeader.classList.contains('page-header--closed-menu')) {
         pageHeader.classList.remove('page-header--closed-menu');
         pageHeader.classList.add('page-header--opened-menu');
+        body.classList.add('modal__scroll-hidden');
       } else {
         closeMenu();
       }
@@ -76,12 +78,14 @@
 
   var closeSuccessPopup = function () {
     modalSuccess.classList.remove('modal--open');
+    body.classList.remove('modal__scroll-hidden');
     document.removeEventListener('keydown', successPopupEscPressHandler);
     document.removeEventListener('click', successPopupClickHandler);
   };
 
   var showSuccess = function () {
     modalSuccess.classList.add('modal--open');
+    body.classList.add('modal__scroll-hidden');
     document.addEventListener('keydown', successPopupEscPressHandler);
     document.addEventListener('click', successPopupClickHandler);
     modalSuccessClose.addEventListener('click', closeButtonHandler);
@@ -94,5 +98,6 @@
   form.addEventListener('submit', function (evt) {
     evt.preventDefault();
     upload(new FormData(form), uploadSuccessHandler);
+    form.reset();
   });
 })();
