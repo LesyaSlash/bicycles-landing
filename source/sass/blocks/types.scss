@@ -26,12 +26,13 @@
 }
 
 .types__list {
+  @include list-style (0 auto, 0, none);
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   width: 100%;
   max-width: 1222px;
-  margin: 0 auto;
+  // margin: 0 auto;
 
   @media (max-width: $tablet-width) {
     justify-content: space-around;

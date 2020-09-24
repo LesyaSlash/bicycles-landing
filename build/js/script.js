@@ -46,7 +46,6 @@
   var upload = function (data, successHandler) {
     var xhr = new XMLHttpRequest();
 
-
     xhr.addEventListener('load', function () {
       successHandler(xhr.response);
     });
