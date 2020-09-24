@@ -31,10 +31,10 @@
 }
 
 .facts__list {
+  @include list-style (0 auto, 0, none);
   display: flex;
   flex-wrap: wrap;
   max-width: 1207px;
-  margin: 0 auto;
 }
 
 .facts__item {
